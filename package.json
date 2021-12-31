@@ -10,12 +10,8 @@
     "start:root": "yarn workspace @henriquecouto/catz-root start",
     "start:header": "yarn workspace @henriquecouto/catz-header start",
     "start": "concurrently --kill-others-on-fail -n ROOT,HEADER -c magenta,blue \"yarn start:root\"  \"yarn start:header\"",
-    "test:root": "yarn workspace @henriquecouto/catz-root test",
-    "test:header": "yarn workspace @henriquecouto/catz-header test",
-    "test": "concurrently --kill-others-on-fail -n ROOT,HEADER -c magenta,blue \"yarn test:root\" \"yarn test:header\"",
-    "lint:root": "yarn workspace @henriquecouto/catz-root lint",
-    "lint:header": "yarn workspace @henriquecouto/catz-header lint",
-    "lint": "concurrently --kill-others-on-fail -n ROOT,HEADER -c magenta,blue \"yarn lint:root\" \"yarn lint:header\""
+    "test": "yarn workspaces run test",
+    "lint": "yarn workspaces run lint"
   },
   "dependencies": {
     "react": "^17.0.2",
