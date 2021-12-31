@@ -6,6 +6,12 @@ registerApplication({
   activeWhen: () => true,
 });
 
+registerApplication({
+  name: "@henriquecouto/catz-viewer",
+  app: () => System.import("@henriquecouto/catz-viewer"),
+  activeWhen: ["/"],
+});
+
 start({
   urlRerouteOnly: true,
 });

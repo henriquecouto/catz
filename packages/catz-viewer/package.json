@@ -1,0 +1,20 @@
+{
+  "name": "@henriquecouto/catz-viewer",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve --port 9002",
+    "start:standalone": "webpack serve --env standalone",
+    "build": "concurrently yarn:build:*",
+    "build:webpack": "webpack --mode=production",
+    "analyze": "webpack --mode=production --env analyze",
+    "lint": "eslint src --ext js,ts,tsx",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "test": "cross-env BABEL_ENV=test jest",
+    "watch-tests": "cross-env BABEL_ENV=test jest --watch",
+    "prepare": "husky install",
+    "coverage": "cross-env BABEL_ENV=test jest --coverage",
+    "build:types": "tsc"
+  },
+  "types": "dist/henriquecouto-catz-viewer.d.ts"
+}

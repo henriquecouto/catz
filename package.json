@@ -9,7 +9,8 @@
   "scripts": {
     "start:root": "yarn workspace @henriquecouto/catz-root start",
     "start:header": "yarn workspace @henriquecouto/catz-header start",
-    "start": "concurrently --kill-others-on-fail -n ROOT,HEADER -c magenta,blue \"yarn start:root\"  \"yarn start:header\"",
+    "start:viewer": "yarn workspace @henriquecouto/catz-viewer start",
+    "start": "concurrently --kill-others-on-fail -n ROOT,HEADER,VIEWER -c magenta,blue,green \"yarn start:root\" \"yarn start:header\" \"yarn start:viewer\"",
     "test": "yarn workspaces run test",
     "lint": "yarn workspaces run lint"
   },
