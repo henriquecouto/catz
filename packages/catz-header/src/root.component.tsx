@@ -1,3 +1,13 @@
-export default function Root(props) {
-  return <section>{props.name} is mounted!</section>;
-}
+import { GlobalStyle } from "./components/GlobalStyle";
+import { Navbar } from "./components/Navbar";
+
+const Root = () => {
+  return (
+    <>
+      <GlobalStyle />
+      <Navbar />
+    </>
+  );
+};
+
+export default Root;

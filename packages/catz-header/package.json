@@ -16,5 +16,10 @@
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "build:types": "tsc"
   },
-  "types": "dist/henriquecouto-catz-header.d.ts"
+  "types": "dist/henriquecouto-catz-header.d.ts",
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.6"
+  }
 }
