@@ -16,5 +16,8 @@
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "build:types": "tsc"
   },
-  "types": "dist/henriquecouto-catz-viewer.d.ts"
+  "types": "dist/henriquecouto-catz-viewer.d.ts",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
 }
